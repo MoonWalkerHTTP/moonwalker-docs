@@ -42,7 +42,7 @@ $ create-moonwalker-app create <directory-name>
 - [ ] [gh (GitHub CLI)](https://cli.github.com)
 
 ```
-gh repo clone MoonWalkerHTTP/moonwalker-app-template
+gh repo clone MoonWalkerHTTP/moonwalker-app-template <directory-name>
 ```
 
 - [ ] [git](https://git-scm.com/)
