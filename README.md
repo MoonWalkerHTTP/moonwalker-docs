@@ -90,7 +90,7 @@ To use HTML, Open the `/app/index/index.html` file and you can continue editing 
 
 ### Creating a New Route
 
-To Create a new Route, create a new Directory in the `/app` folder and name it as your route. For Example, `About`. We will use `About` in the following steps as an example. And, in the Example, we will be mainly using HTML. To use Pug, refer [Slash Route](#slash-route)
+To Create a new Route, create a new Directory in the `/app` folder and name it as your route. For Example, `About`. We will use `About` in the following steps as an example. And, in the Example, we will be mainly using HTML. To use Pug, refer [Slash Route](#slash-route) on how to use Pug for routes.
 
 After creating the `About` Directory, we will create 2 files which are `about.html` and `about.pug`. 
 
@@ -122,6 +122,8 @@ Update it as follows for the current example we are refering.
      }
 ]
 ```
+
+You can now go to http://localhost:5000/about in your browser and see the updated changes.
 
 Congratulations! You Successfully Created a new Route.
 
