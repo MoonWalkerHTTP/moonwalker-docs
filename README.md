@@ -8,7 +8,20 @@ Documentation for [MoonWalker](https://github.com/MoonWalkerHTTP)
 - [x] [Git](https://git-scm.com)
 - [x] [GitHub CLI (Optional)](https://cli.github.com)
 
-## Installation
+## Introduction 
+MoonWalker is An HTTP server for static Websites made with Express.js. <br>
+
+You can Create Varoius Routes and link `.pug` or `.html` files to the routes. <br> 
+
+You can even link other API's or Socket Server to the `.html` or `.pug` files using Javascript. <br>
+
+Every Route has its own Folder containing its own files. <br>
+
+A Route can be linked by updating the `/config/routes.json` file. <br>
+
+## Documentation
+
+### Creating MoonWalker App
 
 - **Method One - MoonWalker CLI**
 
@@ -38,7 +51,45 @@ gh repo clone MoonWalkerHTTP/moonwalker-app-template
 git clone https://github.com/MoonWalkerHTTP/moonwalker-app-template.git <directory-name>
 ```
 
-## Usage
+### Starting MoonWalker App
+
+Production Server - 
+```
+$ npm start
+```
+
+Development Server - 
+```
+$ npm run dev
+```
+
+### Port
+
+The default port for a MoonWalker App is 5000. <br>
+
+To change the Default Port, Open `/config/serverConfig.json` and edit the value for `port`.
+
+### Deployment / Hosting (On a VPS)
+
+MoonWalker Apps can be deployed on many platforms such as [DigitalOcean](https://www.digitalocean.com/) and [Linode](https://www.linode.com/) as it is bascically a [Node.js](https://nodejs.org) Project.
+
+### Slash Route
+
+After Starting the Development Server, visit [localhost:5000](http://localhost:5000) on your Web Browser.
+
+After the page loads up, You will see a basic Hello World Page. This is the `index` page. 
+
+For Editing The `index`, open your application directory in yopur preferred code editor and open the directory `/app`. In the `/app` directory, all the routes are saved. 
+
+#### In MoonWalker, You have 2 options for editing / creating a route. 1) Pug, 2) HTML.
+You can use either Pug or HTML. 
+
+To use Pug, open the `/app/index/index.pug` file and remove the `include index.html` line. You can now continue editing the `.pug` file and the changes will show up automatically in the browser upon refreshing. 
+
+To use HTML, Open the `/app/index/index.html` file and you can continue editing and the changes will show up automatically in the browser upon refreshing. 
+
+
+
 
 
 
