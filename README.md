@@ -88,6 +88,43 @@ To use Pug, open the `/app/index/index.pug` file and remove the `include index.h
 
 To use HTML, Open the `/app/index/index.html` file and you can continue editing and the changes will show up automatically in the browser upon refreshing. 
 
+### Creating a New Route
+
+To Create a new Route, create a new Directory in the `/app` folder and name it as your route. For Example, `About`. We will use `About` in the following steps as an example. And, in the Example, we will be mainly using HTML. To use Pug, refer [Slash Route](#slash-route)
+
+After creating the `About` Directory, we will create 2 files which are `about.html` and `about.pug`. 
+
+In the `about.pug` file, copy / type the following - 
+```
+about.pug
+
+include about.html
+```
+
+In the `about.html` file, You can code as you like. 
+
+For the changes to show up, you will have to update the `/config/routes.json` file. 
+
+Update it as follows for the current example we are refering. 
+```
+[
+     {
+          "id": "0",
+          "description": "Index", 
+          "route": "/",
+          "renderFile": "/index/index.pug"
+     }, 
+     {
+          "id": "1", 
+          "description": "About", 
+          "route": "/about", 
+          "renderFile": "/about/about.pug"
+     }
+]
+```
+
+Congratulations! You Successfully Created a new Route.
+
 
 
 
