@@ -79,7 +79,7 @@ After Starting the Development Server, visit [localhost:5000](http://localhost:5
 
 After the page loads up, You will see a basic Hello World Page. This is the `index` page. 
 
-For Editing The `index`, open your application directory in yopur preferred code editor and open the directory `/app`. In the `/app` directory, all the routes are saved. 
+For Editing The `index`, open your application directory in your preferred code editor and open the directory `/app`. In the `/app` directory, all the routes are saved. 
 
 #### In MoonWalker, You have 2 options for editing / creating a route. 1) Pug, 2) HTML.
 You can use either Pug or HTML. 
