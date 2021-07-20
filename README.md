@@ -26,12 +26,6 @@ A Route can be linked by updating the `/config/routes.json` file. <br>
 - **Method One - MoonWalker CLI**
 
 ```
-$ npx create-moonwalker-app create <directory-name>
-```
-
-OR
-
-```
 $ npm i -g create-moonwalker-app
 
 $ create-moonwalker-app create <directory-name>
