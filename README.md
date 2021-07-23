@@ -168,6 +168,45 @@ Note that the `css` files are contained in the `/css` directory which does not c
 
 ### Using CSS (Pug)
 
+To use CSS, follow the below example.
+
+I want to create a `/about` Route in `pug` and I want to add some styles to it. 
+
+My `/config/routes.json` is updated (as in [#creating-a-new-route](#creating-a-new-route))
+
+My `/app/about/about.pug` file contains the following text - 
+```
+doctype html
+html(lang="en")
+     head
+          meta(charset="UTF-8")
+          meta(http-equiv="X-UA-Compatible", content="IE=edge")
+          meta(name="viewport", content="width=device-width, initial-scale=1.0")
+          title About | MoonWalker
+          link(rel="stylesheet", href="/css/about.css")
+     body 
+          h1 About Me 
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, aliquam.
+```
+
+Note that the `link` tag is as follows - 
+```
+link(rel="stylesheet", href="/css/about.css")
+```
+To use css, You will have to link it in the `.pug` file as shown above. Other Options will not work as the `.css` file has to be served as a route.  
+
+To use CSS, I will Create a file in the `/css` directory called `about.css`. In the CSS Folder, All the CSS files of your Website are contained.
+
+My `/css/about.css` contains the following text - 
+```
+* {
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     text-align: center;
+}
+```
+
+Note that the `css` files are contained in the `/css` directory which does not come under the `/app` directory. It Comes under the `root` Directory. So don't get confused.
+
 
 
 
