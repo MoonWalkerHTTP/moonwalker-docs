@@ -195,7 +195,7 @@ link(rel="stylesheet", href="/css/about.css")
 ```
 To use css, You will have to link it in the `.pug` file as shown above. Other Options will not work as the `.css` file has to be served as a route.  
 
-To use CSS, I will Create a file in the `/css` directory called `about.css`. In the CSS Folder, All the CSS files of your Website are contained.
+To use CSS, I will Create a file in the `/css` directory called `about.css`. In the `/css` Folder, All the CSS files of your Website are contained.
 
 My `/css/about.css` contains the following text - 
 ```
@@ -206,6 +206,59 @@ My `/css/about.css` contains the following text -
 ```
 
 Note that the `css` files are contained in the `/css` directory which does not come under the `/app` directory. It Comes under the `root` Directory. So don't get confused.
+
+### Using Frontend JS (HTML)
+
+To Use Frontend JavaScript, Follow the Below Example. 
+
+I want to create a `/about` route and I want to `console.log` `About Page!` in the Browser console through an external JavaScript File. 
+
+My `/config/routes.json` is updated (as in [#creating-a-new-route](#creating-a-new-route))
+
+My `/app/about/about.pug` file contains the following text - 
+```
+include about.html 
+```
+
+My `/app/about/about.html` includes the following text - 
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>MoonWalker | About</title>
+     <script src="/js/about.js"></script>
+</head>
+<body>
+     <h1>About Me</h1>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, molestias!</p>
+</body>
+</html>
+```
+
+Note that the `script` tag is as follows - 
+```
+<script src="/js/about.js"></script>
+```
+
+To use Frontend JavaScript, You will have to link it in the `.html` file as shown above. Other Options will not work as the `.js` file has to be served as a route.  
+
+To use Frontend Javascrpt, I will Create a file in the `/js` directory called `about.js`. In the `/js` Folder, All the Javascript files of your Website are contained.
+
+My `/js/about.js` contains the Following Text - 
+```
+console.log('About Page!');
+```
+
+Note that the `js` files are contained in the `/js` directory which does not come under the `/app` directory. It Comes under the `root` Directory. So don't get confused.
+
+### Using JS (Pug)
+
+
+
+
 
 
 
