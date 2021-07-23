@@ -121,6 +121,54 @@ You can now go to http://localhost:5000/about in your browser and see the update
 
 Congratulations! You Successfully Created a new Route.
 
+### Using CSS (HTML)
+
+To use CSS, Follow the below example. We will use the same example used in the above example which is `/about` .
+
+My `/app/about/about.pug` Contains the Following text - 
+```
+include about.html
+```
+
+My `app/about/about.html` Contains the Following text - 
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>About | MoonWalker</title>
+     <link rel="stylesheet" href="/css/about.css">
+</head>
+<body>
+     <h1>About Me</h1>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, qui.</p>
+</body>
+</html>
+```
+
+Note that the `link` tag is as follows - 
+```
+<link rel="stylesheet" href="/css/about.css">
+```
+To use css, You will have to link it in the HTML as shown above. Other Options will not work as the `.css` file has to be served as a route.  
+
+To use CSS, I will Create a file in the `/css` directory called `about.css`. In the CSS Folder, All the CSS files of your Website are contained. 
+
+My `/css/about.css` will contain the following Text - 
+```
+* {
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     text-align: center;
+}
+```
+
+Note that the `css` files are contained in the `/css` directory which does not come under the `/app` directory. It Comes under the `root` Directory. So don't get confused.
+
+### Using CSS (Pug)
+
+
 
 
 
