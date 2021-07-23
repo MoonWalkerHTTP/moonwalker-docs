@@ -45,23 +45,6 @@ gh repo clone MoonWalkerHTTP/moonwalker-app-template <directory-name>
 git clone https://github.com/MoonWalkerHTTP/moonwalker-app-template.git <directory-name>
 ```
 
-### Updating MoonWalker App
-If You are using MoonWalker from a long time, you may want to update it. 
-
-To Update MoonWalker, Follow the Following Steps - 
-
-Step 1 - Create a `git remote` - 
-```
-$ git remote add update https://github.com/MoonWalkerHTTP/moonwalker-app-template.git
-```
-
-Step 2 - Pull the Updated Files -
-```
-git pull update master
-```
-
-You will have to pull from the `master` branch as it contains the stable version of MoonWalker. 
-
 ### Starting MoonWalker App
 
 Production Server - 
