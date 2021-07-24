@@ -256,10 +256,42 @@ Note that the `js` files are contained in the `/js` directory which does not com
 
 ### Using JS (Pug)
 
+To Use Frontend JavaScript in `pug`, Follow the Below Example. 
 
+I want to create a `/about` route and I want to `console.log` `About Page!` in the Browser console through an external JavaScript File. 
 
+My `/config/routes.json` is updated (as in [#creating-a-new-route](#creating-a-new-route))
 
+My `/app/about/about.pug` file contains the following text - 
+```
+doctype html
+html(lang="en")
+     head
+          meta(charset="UTF-8")
+          meta(http-equiv="X-UA-Compatible", content="IE=edge")
+          meta(name="viewport", content="width=device-width, initial-scale=1.0")
+          title About | MoonWalker
+          script(src="/js/about.js") 
+     body 
+          h1 About Me 
+          p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, cumque?
+```
 
+Note that the `script` tag is as follows - 
+```
+script(src="/js/about.js") 
+```
+
+To use Frontend JavaScript, You will have to link it in the `.pug` file as shown above. Other Options will not work as the `.js` file has to be served as a route.  
+
+To use Frontend Javascrpt, I will Create a file in the `/js` directory called `about.js`. In the `/js` Folder, All the Javascript files of your Website are contained.
+
+My `/js/about.js` contains the Following Text - 
+```
+console.log('About Page!');
+```
+
+Note that the `js` files are contained in the `/js` directory which does not come under the `/app` directory. It Comes under the `root` Directory. So don't get confused.
 
 
 
